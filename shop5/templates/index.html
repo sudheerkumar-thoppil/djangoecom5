@@ -1,0 +1,7 @@
+{% load static %}
+<h1>Home page</h1>
+{% for product in products %}
+    <img src="{{product.itemimage.url}}"></img>
+    <p>{{product.itemname}}</p>
+    <p>{{product.itemprice}}</p>
+{% endfor %}
